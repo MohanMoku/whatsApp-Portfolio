@@ -117,7 +117,7 @@ const Message10 = () => <div className="chat chat-receiver space-y-2">
 const Message11 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
         <div className="flex flex-col gap-4">
-            Mohan Kumar Resume 📁
+            Mohan Kumar's Resume 📁
             <div className="bg-base-100 rounded-md">
                 <button className="flex items-center gap-2 px-3 py-2 max-sm:w-11/12">
                     <div className="flex flex-col gap-2 max-sm:w-5/6">
@@ -188,11 +188,11 @@ export default function ContactPage() {
     }, []);
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full rounded-3xl overflow-hidden">
             <div className="w-full h-1/15">
                 <ChatHead image={contactDp} name="Contact" />
             </div>
-            <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
+            <div className="overflow-y-scroll bg-gray-900 flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
                     <Component.component key={idx} />

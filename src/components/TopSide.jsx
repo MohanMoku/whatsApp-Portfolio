@@ -4,6 +4,7 @@ import { TiGroupOutline } from "react-icons/ti";
 import { IoCallOutline } from "react-icons/io5";
 import { CiSettings } from "react-icons/ci";
 import logo from '../assets/logo1080.jpg'
+import { Link } from "react-router-dom";
 
 export default function TopSide() {
     return (
@@ -18,7 +19,9 @@ export default function TopSide() {
             </div>
             <div className="flex gap-4 flex-col justify-center items-center">
                 <CiSettings size={30} />
-                <img src={logo} alt="img" className='w-7 rounded-full' />
+                <Link to={'/mohan-kumar-s'}>
+                    <img src={logo} alt="img" className='w-7 rounded-full' />
+                </Link>
             </div>
         </div>
     )

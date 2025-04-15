@@ -2,6 +2,7 @@ import aboutDp from '../assets/about-me.jpeg'
 import ChatBottom from '../components/ChatBottom'
 import ChatHead from '../components/ChatHead'
 import { useEffect, useState } from 'react'
+import photo from '../assets/mohan-kumar.png'
 
 const Message1 = () => <div className="chat chat-sender space-y-2">
     <div className="chat-bubble">So Mohan… tell me more about yourself</div>
@@ -17,6 +18,17 @@ const Message2 = () => <div className="chat chat-receiver space-y-2">
         Not just learning it for the degree, though—I’m in it because<br /> I love building things that people can actually use.
     </div>
 </div>;
+
+const Message2_1 = () => <div class="chat chat-receiver">
+    <div class="chat-bubble">
+        <div class="flex flex-col gap-4">
+            Check out my recent photo
+            <button class="border-base-content/30 w-52 overflow-hidden rounded-md border bg-gray-900" aria-label="Image Button">
+                <img class="w-full" src={photo} alt="Watch Image" />
+            </button>
+        </div>
+    </div>
+</div>
 
 const Message3 = () => <div className="chat chat-sender space-y-2">
     <div className="chat-bubble">What kind of dev are you?</div>
@@ -83,6 +95,7 @@ export default function AboutMePage() {
     const [messages, setMessages] = useState([
         { id: 1, time: 1000, text: 'So Mohan… tell me more about yourself', component: () => <Message1 /> },
         { id: 2, time: 3500, text: '', component: () => <Message2 /> },
+        { id: 2, time: 3700, text: '', component: () => <Message2_1 /> },
         { id: 3, time: 22000, text: 'What kind of dev are you?', component: () => <Message3 /> },
         { id: 4, time: 25000, text: '', component: () => <Message4 /> },
         { id: 5, time: 35000, text: 'What keeps you going?', component: () => <Message5 /> },
@@ -118,12 +131,12 @@ export default function AboutMePage() {
     }, []);
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full rounded-3xl overflow-hidden">
             <div className="w-full h-1/15">
                 <ChatHead image={aboutDp} name="About Me" />
             </div>
 
-            <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
+            <div className="overflow-y-scroll bg-gray-900 flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
                     <Component.component key={idx} />

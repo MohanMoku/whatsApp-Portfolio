@@ -11,7 +11,7 @@ import { Link, useLocation } from "react-router-dom";
 export default function Chats() {
 
     const boxStyle = {
-        backgroundColor: '#00000010',
+        backgroundColor: '#000000',
         borderRadius: '10px',
         boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)'
     };
@@ -43,32 +43,32 @@ export default function Chats() {
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'mohan-kumar-s' ? boxStyle : null} >
                     <img src={logo} alt="img" className='w-12 rounded-full' />
-                    <Link to='/mohan-kumar-s' className='font-bold italic text-2xl cursor-pointer'>Mohan Kumar S</Link>
+                    <Link to='/mohan-kumar-s' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>Mohan Kumar S</Link>
                 </div>
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'about-me' ? boxStyle : null}>
                     <img src={aboutMe} alt="img" className='w-12 rounded-full' />
-                    <Link to='/about-me' className='font-bold italic text-2xl cursor-pointer'>About Me</Link>
+                    <Link to='/about-me' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>About Me</Link>
                 </div>
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'education' ? boxStyle : null}>
                     <img src={education} alt="img" className='w-12 rounded-full' />
-                    <Link to='/education' className='font-bold italic text-2xl cursor-pointer'>Education</Link>
+                    <Link to='/education' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>Education</Link>
                 </div>
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'experience' ? boxStyle : null}>
                     <img src={experience} alt="img" className='w-12 rounded-full' />
-                    <Link to='/experience' className='font-bold italic text-2xl cursor-pointer'>Experience</Link>
+                    <Link to='/experience' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>Experience</Link>
                 </div>
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'projects' ? boxStyle : null}>
                     <img src={projects} alt="img" className='w-12 rounded-full' />
-                    <Link to='/projects' className='font-bold italic text-2xl cursor-pointer'>Projects</Link>
+                    <Link to='/projects' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>Projects</Link>
                 </div>
 
                 <div className="flex w-full gap-4 items-center p-2 hover:bg-gray-800 hover:rounded-lg" style={lastSegment === 'contact' ? boxStyle : null}>
                     <img src={contact} alt="img" className='w-12 rounded-full' />
-                    <Link to='/contact' className='font-bold italic text-2xl cursor-pointer'>Contact</Link>
+                    <Link to='/contact' className='font-bold font-serif lg:text-2xl text-3xl cursor-pointer'>Contact</Link>
                 </div>
 
             </nav>

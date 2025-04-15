@@ -13,7 +13,7 @@ export default function TopHeader() {
             <div className="m-2 flex gap-3">
                 <FaWindowMinimize />
                 <FaWindowMaximize />
-                <FaWindowClose />
+                <FaWindowClose onClick={() => window.close()} />
             </div>
         </div>
     )

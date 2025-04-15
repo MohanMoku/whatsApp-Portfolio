@@ -130,12 +130,12 @@ export default function MohanPage() {
     }, []);
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full rounded-3xl overflow-hidden">
             <div className="w-full h-1/15">
                 <ChatHead image={mokuDp} name="Mohan Kumar S" />
             </div>
 
-            <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
+            <div className="overflow-y-scroll flex bg-gray-900 flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
                     <Component.component key={idx} />

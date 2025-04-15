@@ -27,7 +27,7 @@ const Message2 = () => <div className="chat chat-receiver space-y-2">
 const Message3 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
 
-        2. <b><u>FUSSION-TECHATHON</u></b><br />
+        2. <b><u>FUSION-TECHATHON</u></b><br />
         Project: Freelancing Platform <br />
         Description:
         Created an online marketplace where individuals <br /> offer services and businesses hire talent for short-term or <br />project-based work. <br />It connects freelancers with clients across various fields <br /> like writing, design, tech, and marketing. <br />
@@ -89,12 +89,12 @@ export default function ExperiencePage() {
     }, []);
 
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full rounded-3xl overflow-hidden">
             <div className="w-full h-1/15">
                 <ChatHead image={expDp} name="Experience" />
             </div>
 
-            <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
+            <div className="overflow-y-scroll bg-gray-900 flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
                     <Component.component key={idx} />
