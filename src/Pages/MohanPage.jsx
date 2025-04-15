@@ -73,7 +73,7 @@ const Message13 = () => <div className="chat chat-receiver space-y-2">
                         </div>
                     </div>
                     <span className="btn btn-text btn-circle">
-                        <MdDownloading className="text-2xl text-white" onClick={() => window.open('./src/assets/Resume.pdf')} />
+                        <MdDownloading className="text-2xl text-white" onClick={() => window.open('/Resume.pdf', '_blank')} />
                     </span>
                 </button>
             </div>
