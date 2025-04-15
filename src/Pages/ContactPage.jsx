@@ -193,6 +193,8 @@ export default function ContactPage() {
                 <ChatHead image={contactDp} name="Contact" />
             </div>
 
+            <Link to={'./src/assets/Resume.pdf'}>Resume</Link>
+
             <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
