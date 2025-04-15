@@ -134,7 +134,7 @@ const Message11 = () => <div className="chat chat-receiver space-y-2">
                         </div>
                     </div>
                     <span className="btn btn-text btn-circle">
-                        <MdDownloading className="text-2xl text-white" onClick={() => window.open('./src/assets/Resume.pdf')} />
+                        <MdDownloading className="text-2xl text-white" onClick={() => window.open('/Resume.pdf')} />
                     </span>
                 </button>
             </div>
@@ -192,9 +192,6 @@ export default function ContactPage() {
             <div className="w-full h-1/15">
                 <ChatHead image={contactDp} name="Contact" />
             </div>
-
-            <Link to={'./src/assets/Resume.pdf'}>Resume</Link>
-
             <div className="overflow-y-scroll flex flex-col-reverse h-13/15 pb-2 pt-5" ref={scrollToBottom}>
 
                 {chat.slice().reverse().map((Component, idx) => (
