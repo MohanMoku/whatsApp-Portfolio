@@ -9,8 +9,8 @@ function App() {
         <TopHeader />
       </div>
 
-      <div className="flex flex-1 h-17/18 ">
-        <div className="bg-gray-800 w-12">
+      <div className="flex flex-1 h-17/18">
+        <div className="bg-gray-800 w-12 hidden lg:block">
           <TopSide />
         </div>
 
