@@ -44,6 +44,17 @@ const Message4 = () => <div className="chat chat-sender space-y-2">
 </div>;
 
 const Message5 = () => <div className="chat chat-receiver space-y-2">
+    <div className="chat-bubble">
+        Thanks! Each one pushed me to think faster,<br /> build cleaner, and work better with a team. <br /><br />
+        Oh, and outside hackathons—<br />
+        I also conducted a <b><u>Workshop</u></b> for SDM Polytechnic students on <b>React.js</b>. <br />
+        It was all about helping them kickstart frontend development, <br />
+        introducing concepts like components, hooks, and state management. <br />
+        Honestly, teaching made me a better learner too. 🚀
+    </div>
+</div>;
+
+const Message6 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">Thanks! Each one pushed me to think faster,<br /> build cleaner, and work better with a team. <br />
         Can’t wait for the next one. <br /><br /> Let's move to next one which is my Projects</div>
 </div>
@@ -62,6 +73,7 @@ export default function ExperiencePage() {
         { id: 3, time: 30000, text: '', component: () => <Message3 /> },
         { id: 3, time: 60000, text: 'Yo that’s impressive.', component: () => <Message4 /> },
         { id: 4, time: 63000, text: '', component: () => <Message5 /> },
+        { id: 5, time: 67000, text: '', component: () => <Message6 /> },
     ])
 
     const [chat, setChat] = useState([])
