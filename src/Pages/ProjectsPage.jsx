@@ -23,6 +23,23 @@ const Message2 = () => <div className="chat chat-receiver space-y-2">
 
 const Message3 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
+        <b> E-Commerce App </b><br />
+        Built a full-stack e-commerce platform to sell football jerseys <br />
+        using React.js, Express.js, and MongoDB. <br />
+        Implemented authentication, product management, and order tracking, <br />
+        with a scalable SPA architecture for smooth performance. <br />
+        <Link to={'https://github.com/MohanMoku/E-Commerce-App'} target='_blank' className='text-blue-500'>E-Commerce App Github Repo</Link><br />
+        <div className="flex space-x-2">
+            <RiReactjsLine className='text-3xl inline-block text-blue-500' />
+            <FaNode className='text-3xl inline-block text-green-500' />
+            <SiExpress className='text-3xl inline-block text-blue-500 font-bold' />
+            <DiMongodb className='text-3xl inline-block text-green-500' />
+        </div>
+    </div>
+</div>;
+
+const Message4 = () => <div className="chat chat-receiver space-y-2">
+    <div className="chat-bubble">
         <b> Blog APP </b><br />
         Built a full-stack blog platform using <br /> the MERN stack—Node.js, MongoDB, Express.js, and React.js. <br />
         Deployed it from scratch, including auth, CRUD functionality, and a sleek UI. <br />
@@ -36,16 +53,21 @@ const Message3 = () => <div className="chat chat-receiver space-y-2">
     </div>
 </div>;
 
-const Message4 = () => <div className="chat chat-sender space-y-2">
-    <div className="chat-bubble">Nice! Blogging platforms are tricky—handling posts, users, all that jazz. <br />
-        What else you got?</div>
+const Message5 = () => <div className="chat chat-sender space-y-2">
+    <div className="chat-bubble">
+        Nice! Both your projects sound solid— <br />
+        a full-stack Blogging Platform <b>and</b> an E-Commerce App for jerseys. <br />
+        Handling posts, users, orders, and all that jazz isn’t easy. <br />
+        Got anything else up your sleeve?
+    </div>
 </div>;
 
-const Message5 = () => <div className="chat chat-receiver space-y-2">
+
+const Message6 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">Glad you asked. Here’s one that dives into machine learning:</div>
 </div>;
 
-const Message6 = () => <div className="chat chat-receiver space-y-2">
+const Message7 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
         <b> Dynamic Text Generation </b><br />
         I fine-tuned a GPT-2 model to generate tech-related content. <br />
@@ -59,16 +81,16 @@ const Message6 = () => <div className="chat chat-receiver space-y-2">
     </div>
 </div>;
 
-const Message7 = () => <div className="chat chat-sender space-y-2">
+const Message8 = () => <div className="chat chat-sender space-y-2">
     <div className="chat-bubble">Damn, from front-end UI to fine-tuning GPT-2? <br /> You're kinda everywhere 👀 <br />
         Ever done anything with classification or real-world ML?</div>
 </div>;
 
-const Message8 = () => <div className="chat chat-receiver space-y-2">
+const Message9 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">Absolutely. Here’s something shorter but impactful:</div>
 </div>;
 
-const Message9 = () => <div className="chat chat-receiver space-y-2">
+const Message10 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
         <b>SMS Spam Detection</b> <br />
         A simple ML classifier that detects if a message is spam or not. <br />
@@ -83,15 +105,15 @@ const Message9 = () => <div className="chat chat-receiver space-y-2">
     </div>
 </div>;
 
-const Message10 = () => <div className="chat chat-sender space-y-2">
+const Message11 = () => <div className="chat chat-sender space-y-2">
     <div className="chat-bubble">That’s actually super useful. Quick and smart. <br /> Any Android stuff?</div>
 </div>;
 
-const Message11 = () => <div className="chat chat-receiver space-y-2">
+const Message12 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">Yup, built this one for mobile dev lovers:</div>
 </div>;
 
-const Message12 = () => <div className="chat chat-receiver space-y-2">
+const Message13 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
         <b>Android App</b> <br />
         An Android app built using Java that helps split bills between friends. <br />
@@ -108,11 +130,11 @@ const Message12 = () => <div className="chat chat-receiver space-y-2">
     </div>
 </div>;
 
-const Message13 = () => <div className="chat chat-sender space-y-2">
+const Message14 = () => <div className="chat chat-sender space-y-2">
     <div className="chat-bubble">Damn, that’s a solid lineup. You’ve done all this?</div>
 </div>;
 
-const Message14 = () => <div className="chat chat-receiver space-y-2">
+const Message15 = () => <div className="chat chat-receiver space-y-2">
     <div className="chat-bubble">
         That’s a glimpse into the projects that shaped my journey so far. <br />
         If you’re interested in collaborating, have feedback, or want to connect— <br />
@@ -136,8 +158,8 @@ export default function ProjectsPage() {
         { id: 2, time: 2000, text: '', component: () => <Message2 /> },
         { id: 3, time: 4000, text: '', component: () => <Message3 /> },
         { id: 4, time: 14000, text: 'Nice! Blogging platform', component: () => <Message4 /> },
-        { id: 5, time: 16000, text: '', component: () => <Message5 /> },
-        { id: 6, time: 18000, text: '', component: () => <Message6 /> },
+        { id: 5, time: 20000, text: '', component: () => <Message5 /> },
+        { id: 6, time: 22000, text: '', component: () => <Message6 /> },
         { id: 7, time: 28000, text: 'Damn, from front-end UI to fine-tuning GPT-2?', component: () => <Message7 /> },
         { id: 8, time: 34000, text: '', component: () => <Message8 /> },
         { id: 9, time: 38000, text: '', component: () => <Message9 /> },
