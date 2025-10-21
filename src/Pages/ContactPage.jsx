@@ -115,7 +115,7 @@ const Message10 = () => <div className="chat chat-receiver space-y-2">
 </div>;
 
 const Message11 = () => <div className="chat chat-receiver space-y-2">
-    <div className="chat-bubble" onClick={() => window.open('/Resume.pdf', '_blank')}>
+    <div className="chat-bubble cursor-pointer" onClick={() => window.open('/Resume.pdf', '_blank')}>
         <div className="flex flex-col gap-4">
             Mohan Kumar's Resume 📁
             <div className="bg-base-100 rounded-md">
